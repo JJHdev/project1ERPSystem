@@ -53,7 +53,6 @@ public class MypageInfoController implements CommandController {
 	}
 	
 	public String searchView (HttpServletRequest request, HttpServletResponse response,int empno) throws SQLException {
-		System.out.println("MypageInfoController");
 		Emp user = null;
 			
 		Connection conn = ConnectionProvider.getConnection();
