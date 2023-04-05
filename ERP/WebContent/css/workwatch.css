@@ -1,0 +1,49 @@
+@charset "UTF-8";
+h2 {
+  text-align: center;
+ 	font-size: 30px;
+ 	padding-top: 10px;
+}
+#wk_in_btn{
+
+ width:80px; 
+ height:80px;
+ 
+ 
+	}
+#wk_out_btn{
+ 
+ 
+	width:80px; 
+	height:80px;
+	
+
+}
+
+
+*{
+    font-family:'Nunito';
+   text-align: center;
+    position: relative;
+    text-align: center;
+   /*  top: 50px; */
+}
+body{
+    background-color: ; /* 원하는 배경색 */
+}
+.date{
+    font-size: 30px;  /* 원하는 폰트 사이즈 */
+      background-color: gray;
+     /*  width:400px;  */
+    color: black;/* 날짜가 표기되는 텍스트 색상 */
+
+     
+}
+.time{
+    font-size: 80px;  /* 원하는 폰트 사이즈 */
+    background-color: gray;
+    font-weight: bold;
+    /* width:400px; */
+    color: white; /* 시간이 표기되는 텍스트 색상 */
+   
+}

@@ -1,0 +1,31 @@
+  submit{
+  margin: 10px;
+  }
+  
+  button {
+    margin: 10px;
+}
+.w-btn {
+    position: relative;
+    border: none;
+ 
+    padding: 3px 7px;
+    border-radius: 7px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+  .w-btn-gray {
+    background-color: #82766b;
+    color: #e3dede;
+}
+  .w-btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+  .w-btn:active {
+    transform: scale(1.5);
+}
