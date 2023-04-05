@@ -49,9 +49,7 @@
 - mypage
 
 
-#### 4.3.핵심코드
-
-##### 4.2.1 JSP에서 같은 Form 안에 submit2개 요청 처리 하기.
+#### 4.3.핵심코드 리뷰
 <details>
 <summary><b>JSP에서 같은 Form 안에 submit2개 요청 처리 하기 펼치기</b></summary>
 <div markdown="1">
@@ -64,6 +62,87 @@
   
 </div>
 </details>
+
+</br>
+
+<details>
+<summary><b>JSP에서 같은 Form 안에 submit2개 요청 처리 하기 펼치기</b></summary>
+<div markdown="1">
+  
+##### 4.2.1 JSP에서 1개의 form태그에서 2개의 submit 버튼으로 보내기
+![2개 submit jsp](https://user-images.githubusercontent.com/116694081/230015412-643b9691-2b00-4f9e-b9a1-1354c6702f83.png)
+
+##### 4.2.1 Controller에서 1개의 form태그에서 2개의 submit 버튼 구분하기
+![2개 submit con](https://user-images.githubusercontent.com/116694081/230015245-c1e98b03-981c-4e1d-b6bc-79723c2dbd8e.png)
+  
+</div>
+</details>
+
+</br>
+
+<details>
+<summary><b>JSP에서 같은 Form 안에 submit2개 요청 처리 하기 펼치기</b></summary>
+<div markdown="1">
+  
+##### 4.2.1 JSP에서 1개의 form태그에서 2개의 submit 버튼으로 보내기
+![2개 submit jsp](https://user-images.githubusercontent.com/116694081/230015412-643b9691-2b00-4f9e-b9a1-1354c6702f83.png)
+
+##### 4.2.1 Controller에서 1개의 form태그에서 2개의 submit 버튼 구분하기
+![2개 submit con](https://user-images.githubusercontent.com/116694081/230015245-c1e98b03-981c-4e1d-b6bc-79723c2dbd8e.png)
+  
+</div>
+</details>
+
+</br>
+
+<details>
+<summary><b>JSP에서 같은 Form 안에 submit2개 요청 처리 하기 펼치기</b></summary>
+<div markdown="1">
+  
+##### 4.2.1 JSP에서 1개의 form태그에서 2개의 submit 버튼으로 보내기
+![2개 submit jsp](https://user-images.githubusercontent.com/116694081/230015412-643b9691-2b00-4f9e-b9a1-1354c6702f83.png)
+
+##### 4.2.1 Controller에서 1개의 form태그에서 2개의 submit 버튼 구분하기
+![2개 submit con](https://user-images.githubusercontent.com/116694081/230015245-c1e98b03-981c-4e1d-b6bc-79723c2dbd8e.png)
+  
+</div>
+</details>
+
+</br>
+
+<details>
+<summary><b>JSP에서 같은 Form 안에 submit2개 요청 처리 하기 펼치기</b></summary>
+<div markdown="1">
+  
+##### 4.2.1 JSP에서 1개의 form태그에서 2개의 submit 버튼으로 보내기
+![2개 submit jsp](https://user-images.githubusercontent.com/116694081/230015412-643b9691-2b00-4f9e-b9a1-1354c6702f83.png)
+
+##### 4.2.1 Controller에서 1개의 form태그에서 2개의 submit 버튼 구분하기
+![2개 submit con](https://user-images.githubusercontent.com/116694081/230015245-c1e98b03-981c-4e1d-b6bc-79723c2dbd8e.png)
+  
+</div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
