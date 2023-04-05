@@ -34,7 +34,7 @@
 그리고 삭제 할 경우 체크박스에 체크하여 삭제하면 한번에 모든 사원, 쪽지를 삭제 할 수 있습니다. 
 사원 삭제, 쪽지 보기탭에서 조회, 페이징 처리가 되어 있습니다. 
 
-### 4.1. 구현한 JSP Page (Webcontent - view)
+### 4.1. 구현한 JSP Page (Webcontent/view)
 - deletemypage
 - dept
 - emp (select_*)제외
@@ -43,7 +43,7 @@
 - mypage
 - updateMypage
 
-### 4.2. 구현한 Java Page (java Resources - src)
+### 4.2. 구현한 Java Page (java Resources/src)
 - auth
 - emp (select* 제외)
 - mypage
