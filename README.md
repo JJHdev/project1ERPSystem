@@ -50,9 +50,10 @@
 - mypage
 
 <details>
-<summary><b>ERD Cloud이미지 펼치기</b></summary>
+<summary><b>핵심코드 펼치기</b></summary>
 <div markdown="1">
-![ERDClude](https://user-images.githubusercontent.com/116694081/229997011-844b20ed-1bff-4c19-a299-c24567a97ca0.png)
+  
+![](https://user-images.githubusercontent.com/116694081/229997011-844b20ed-1bff-4c19-a299-c24567a97ca0.png)
 
 
 ### 4.3. Controller
