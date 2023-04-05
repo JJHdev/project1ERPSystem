@@ -20,8 +20,6 @@ $(document).ready(function(){
 <body>
 <%-- delete핸들러 결과물 int cnt를 setAttribute해서 여기서 볼거임 --%>
 <h2>삭제 후~~~~~~</h2>
-모델 잘 넘어와>>
-${cnt}
 <c:if test="${cnt==1}">
 <script>
 alert("삭제성공")
