@@ -52,11 +52,8 @@
 <details>
 <summary><b>핵심코드 펼치기</b></summary>
 <div markdown="1">
-  
-![](https://user-images.githubusercontent.com/116694081/229997011-844b20ed-1bff-4c19-a299-c24567a97ca0.png)
 
-
-### 4.3. Controller
+### 4.2.1 JSP에서 같은 Form 안에 submit2개 요청 처리 하기.
 
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_controller.png)
 
