@@ -25,12 +25,8 @@
 </br>
 
 ## 3. ERD 설계
-<details>
-<summary><b>ERD Cloud이미지 펼치기</b></summary>
-<div markdown="1">
 ![ERDClude](https://user-images.githubusercontent.com/116694081/229997011-844b20ed-1bff-4c19-a299-c24567a97ca0.png)
-</div>
-</details>
+
 
 </br>
   
