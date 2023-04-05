@@ -51,7 +51,7 @@
 
 #### 4.3.핵심코드 리뷰
 <details>
-<summary><b>JSP에서 같은 Form 안에 submit2개 요청 처리 하기 펼치기</b></summary>
+<summary><b>Form 안에 submit2개 요청 처리</b></summary>
 <div markdown="1">
   
 ##### 4.2.1 JSP에서 1개의 form태그에서 2개의 submit 버튼으로 보내기
@@ -66,14 +66,17 @@
 </br>
 
 <details>
-<summary><b>JSP에서 같은 Form 안에 submit2개 요청 처리 하기 펼치기</b></summary>
+<summary><b>유효성 검사하기</b></summary>
 <div markdown="1">
   
-##### 4.2.1 JSP에서 1개의 form태그에서 2개의 submit 버튼으로 보내기
-![2개 submit jsp](https://user-images.githubusercontent.com/116694081/230015412-643b9691-2b00-4f9e-b9a1-1354c6702f83.png)
+##### 4.2.2 html에서의 유효성검사
+![html에서의 유효성검사](https://user-images.githubusercontent.com/116694081/230015658-fc6d5469-b55c-45e5-8856-96b6a234842a.png)
 
-##### 4.2.1 Controller에서 1개의 form태그에서 2개의 submit 버튼 구분하기
-![2개 submit con](https://user-images.githubusercontent.com/116694081/230015245-c1e98b03-981c-4e1d-b6bc-79723c2dbd8e.png)
+##### 4.2.2 script에서의 유효성 검사
+![script에서의 유효성 검사](https://user-images.githubusercontent.com/116694081/230015830-7010ab6b-b119-47af-9615-f36081638e7b.png)
+  
+##### 4.2.2 Java에서의 유효성 검사
+![자바에서의 유효성 검사](https://user-images.githubusercontent.com/116694081/230016153-2583b369-eedb-4e65-b298-29f1b2250e2e.png)
   
 </div>
 </details>
@@ -81,14 +84,11 @@
 </br>
 
 <details>
-<summary><b>JSP에서 같은 Form 안에 submit2개 요청 처리 하기 펼치기</b></summary>
+<summary><b>Controller에서 4가지의 요청방식 처리하기</b></summary>
 <div markdown="1">
   
-##### 4.2.1 JSP에서 1개의 form태그에서 2개의 submit 버튼으로 보내기
-![2개 submit jsp](https://user-images.githubusercontent.com/116694081/230015412-643b9691-2b00-4f9e-b9a1-1354c6702f83.png)
-
-##### 4.2.1 Controller에서 1개의 form태그에서 2개의 submit 버튼 구분하기
-![2개 submit con](https://user-images.githubusercontent.com/116694081/230015245-c1e98b03-981c-4e1d-b6bc-79723c2dbd8e.png)
+##### 4.2.3 Controller에서 4가지의 요청리처리
+![접근방식에 따라 처리하기 (처음, 사원조회, 삭제하기, 조회)](https://user-images.githubusercontent.com/116694081/230016198-042fbcfd-eabf-4296-a194-bc0e965c3549.png)
   
 </div>
 </details>
@@ -96,14 +96,23 @@
 </br>
 
 <details>
-<summary><b>JSP에서 같은 Form 안에 submit2개 요청 처리 하기 펼치기</b></summary>
+<summary><b>부서삭제시 ajax처리</b></summary>
 <div markdown="1">
   
-##### 4.2.1 JSP에서 1개의 form태그에서 2개의 submit 버튼으로 보내기
-![2개 submit jsp](https://user-images.githubusercontent.com/116694081/230015412-643b9691-2b00-4f9e-b9a1-1354c6702f83.png)
+##### 4.2.4 JSP Ajax처
+![부서삭제시 ajax처리](https://user-images.githubusercontent.com/116694081/230016017-d26510e5-e6bf-459d-95eb-6920e13c938b.png)
 
-##### 4.2.1 Controller에서 1개의 form태그에서 2개의 submit 버튼 구분하기
-![2개 submit con](https://user-images.githubusercontent.com/116694081/230015245-c1e98b03-981c-4e1d-b6bc-79723c2dbd8e.png)
+</div>
+</details>
+
+</br>
+
+<details>
+<summary><b>삭제할 쪽지 배열로 받고 한번에 삭제하기</b></summary>
+<div markdown="1">
+  
+##### 4.2.5 Controller에서 배열요청 처리
+![삭제할 쪽지 배열로 받고 한번에 삭제하기](https://user-images.githubusercontent.com/116694081/230015949-a682e3d7-5c55-472c-be31-c52d13357eb4.png)
   
 </div>
 </details>
@@ -111,19 +120,14 @@
 </br>
 
 <details>
-<summary><b>JSP에서 같은 Form 안에 submit2개 요청 처리 하기 펼치기</b></summary>
+<summary><b>DB요청 후 여러개의 로직 수행시 트렌젝션 처리</b></summary>
 <div markdown="1">
   
-##### 4.2.1 JSP에서 1개의 form태그에서 2개의 submit 버튼으로 보내기
-![2개 submit jsp](https://user-images.githubusercontent.com/116694081/230015412-643b9691-2b00-4f9e-b9a1-1354c6702f83.png)
-
-##### 4.2.1 Controller에서 1개의 form태그에서 2개의 submit 버튼 구분하기
-![2개 submit con](https://user-images.githubusercontent.com/116694081/230015245-c1e98b03-981c-4e1d-b6bc-79723c2dbd8e.png)
+##### 4.2.6 DB 접근 처리시 트렌젝션 처리
+![여러개의 DB 접근 처리시 트렌젝션 처리](https://user-images.githubusercontent.com/116694081/230016076-93bb0d50-2f82-47c5-b0e4-ecb14b2a39a0.png)
   
 </div>
 </details>
-
-
 
 
 
