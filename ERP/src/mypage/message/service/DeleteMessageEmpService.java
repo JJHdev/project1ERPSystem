@@ -20,7 +20,7 @@ public class DeleteMessageEmpService {
 		try {
 			conn = ConnectionProvider.getConnection();
 			conn.setAutoCommit(false);//auto커밋false설정
-			cnt = empDAO.deleteMessageEmpNo(conn,delemessageno);//article_content테이블에서 삭제
+			cnt = empDAO.deleteMessageEmpNo(conn,delemessageno);//테이블에서 삭제
 			
 			if(cnt==0) {
 				throw new EmpNoSelectNotFoundException();

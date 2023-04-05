@@ -24,8 +24,7 @@ public class DeleteShowService {
 				   int size:    1페이지당출력게시물*/
 				int total = empDAO.selectCount(conn);//전체게시물수
 				List<MypageEmp> mypageDeleteList = empDAO.select(conn,(pageNo-1)*size,size);
-				return new MypageDeletePage(total, pageNo, 
-						   					size, mypageDeleteList);//p651 21라인
+				return new MypageDeletePage(total, pageNo, size, mypageDeleteList);//p651 21라인
 			}catch(SQLException e) {
 				throw new RuntimeException();
 			} finally {
@@ -39,8 +38,7 @@ public class DeleteShowService {
 				conn = ConnectionProvider.getConnection();
 				int total = 1;//전체게시물수
 				List<MypageEmp> mypageDeleteList = empDAO.selecteno(conn,(pageNo-1)*size,size,eno);
-				return new MypageDeletePage(total, pageNo, 
-						   					1, mypageDeleteList);//p651 21라인
+				return new MypageDeletePage(total, pageNo, 1, mypageDeleteList);//p651 21라인
 			}catch(SQLException e) {
 				throw new RuntimeException();
 			} finally {

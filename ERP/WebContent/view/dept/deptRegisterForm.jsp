@@ -33,7 +33,6 @@
 
 $(document).ready(function(){
 	$("#btn1").on("click",function(){
-		
 		//유효성검사
 		let idVal1 = $("#deptno").val();
 		if(idVal1==""){
@@ -48,7 +47,6 @@ $(document).ready(function(){
 			$("#deptname").focus();
 			return false;
 		}
-
 	 //user가 입력한 id값을  
 	 //회원가입창의 <input type="text" name="memberid" id="mid">요소의 값으로 설정
 	 this.document.deptDuplicationFrm.deptno.value=deptDuplicationFrm.deptno.value;
@@ -68,16 +66,12 @@ $(document).ready(function(){
 		
 		$.ajax({
 				type:"GET",//요청방식.
-				
 				url:"<%=request.getContextPath()%>/mypageInsertDeptController.aa",
-				
-				data:{"deptname":deptnameVal,"deptno":deptnoVal},//서버로 전송할 데이터. 예){name:"홍GD"}
-		
+				data:{"deptname":deptnameVal,"deptno":deptnoVal},//서버로 전송할 데이터. 
 				success:function(data){
  					alert("새로운 부서를 만들었습니다.");
 	 			//매개변수 data 에는 보낸 컨트롤러에서 응답받은 자료가 온다.
 				},//정상응답후 호출되는 함수
-				
 				error:function(xhr,status,error){
 					alert("새로운 부서를 만드는데 실패했습니다.");
 					let v="";
@@ -90,7 +84,6 @@ $(document).ready(function(){
 				complete:function(){
 				} //작업완료후 호출되는 함수
 			});
-		
 	});
 });
 </script>
@@ -109,8 +102,6 @@ $(document).ready(function(){
       <jsp:include page="../module/left.jsp" flush="false"/>
    </td>
    <td width="78%" valign="top">
-   
-   
    
 		<h3>부서등록</h3>
 <table>
@@ -154,7 +145,6 @@ $(document).ready(function(){
 		 		</td>
 		 	</tr>
 	</form>
-
 </table>
 
  </td>

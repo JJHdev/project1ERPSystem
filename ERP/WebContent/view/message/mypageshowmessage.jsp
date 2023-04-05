@@ -27,13 +27,10 @@ tr.t1:hover td{font-weight: bold;
  			$("#rowSizeFrm").submit();
  		});
  	});
- 	
  	function popup(a,b,c){
  		  let options = "toolbar=no,scrollbars=no,resizable=yes,status=no,menubar=no,width=500, height=500, top=0,left=0";
  		  window.open("<%=request.getContextPath()%>/messageread.aa?no="+a+"&pageNo=${messgaePage.currentPage}&rowSize=${rsize}","_blank", options);
  		}
- 	
- 	
  </script>
 </head>
 <body>
@@ -50,9 +47,6 @@ tr.t1:hover td{font-weight: bold;
       <jsp:include page="../module/left.jsp" flush="false"/>
    </td>
    <td width="78%" valign="top">
-   
-   
-   
    
  <form name="rowSizeFrm" id="rowSizeFrm" 
        action="<%=request.getContextPath()%>/MessageShowController.aa" method="get"> 
@@ -112,7 +106,6 @@ tr.t1:hover td{font-weight: bold;
  	 </tr>
  	 </c:forEach>
  	 
- 	 
  	 </form> 
  	 </c:if>
    <tr>
@@ -135,7 +128,6 @@ tr.t1:hover td{font-weight: bold;
    </tr>
   </tbody>
  </table>
-       
        
    </td>
 </tr>   

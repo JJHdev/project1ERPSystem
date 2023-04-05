@@ -54,11 +54,7 @@
    </td>
    <td width="78%" valign="top">
    
-   
 <h3>사원삭제</h3>
- 
- 
- 
  
  <form name="rowSizeFrm" id="rowSizeFrm" action="<%=request.getContextPath()%>/mypagedeletelist.aa" method="get"> 
    게시물수:
@@ -88,7 +84,6 @@
   	 <td colspan="6" style="text-align:center;">사원이 없습니다.</td>
    </tr>
    </c:if>
-    
    
    <c:if test="${deletepage.hasMypageDelete()}">
    <form name="frm" id="frm" action="<%=request.getContextPath()%>/mypagedeleteshow.aa">
@@ -114,8 +109,6 @@
  	 </form> 
  	 </c:if>
  	 
- 	 
- 	 
    <tr>
   	<td colspan="6" style="text-align:center;">
      <%-- JSTL if조건문: 이전출력 --%>
@@ -138,16 +131,7 @@
    </td>
    </tr>
   </tbody>
-  
  </table>
-       
-       
-      
-      
-       
-       
-       
-       
    </td>
 </tr>   
 <tr>

@@ -64,10 +64,6 @@ public class LoginController implements CommandController {
 				
 				return FORM_VIEW;
 			}
-			
-			//2.비즈니스로직수행
-		
-			//3.Model&view
 		try {
 			int empno= Integer.parseInt(empno1);
 			
@@ -76,7 +72,6 @@ public class LoginController implements CommandController {
 			session.setAttribute("EMP_USER",User);
 			response.sendRedirect(request.getContextPath()+"/notice/list.aa");
 			return null;
-			
 			//로그인에 성공하면 로그인한 회원의 정보를 session에 담는다
 			//model처리 >> 
 			//request객체.setAttribute("속성값",Object value)

@@ -16,10 +16,8 @@
   	border: none; 
   	background: transparent;
   }
-  
 </style>
 <script>
-
 $(document).ready(function(){
 	$("#btn1").on("click",function(){
 		
@@ -46,11 +44,8 @@ $(document).ready(function(){
 		
 		$.ajax({
 				type:"GET",//요청방식.
-				
 				url:"<%=request.getContextPath()%>/mypageDeleteDeptController.aa",
-				
 				data:{"deptno":deptnoVal},//서버로 전송할 데이터. 예){name:"홍GD"}
-		
 				success:function(data){
  					alert("부서를 삭제했습니다.");
 	 			//매개변수 data 에는 보낸 컨트롤러에서 응답받은 자료가 온다.
@@ -68,13 +63,11 @@ $(document).ready(function(){
 				complete:function(){
 				} //작업완료후 호출되는 함수
 			});
-		
 	});
 });
 </script>
 </head>
 <body>
- 
  
 <table width="95%" border="1" cellpadding="0" cellspacing="0">
 <tr>
@@ -88,37 +81,33 @@ $(document).ready(function(){
    </td>
    <td width="78%" valign="top">
    
-   
-   
 		<h3>부서삭제</h3>
 		<table>
-	<form name="deptDuplicationFrm" id="deptDuplicationFrm" method="get" action="<%=request.getContextPath()%>/mypageDeptDeleteDuplicate.aa">
-		 <tr>
-		  <th class="thead">부서번호</th>
-		  <td class="tbody">
-			  <input type="text" name="deptno" id="deptno" value="${Deptno}"  onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" placeholder="부서번호는는 2~4숫자">
-			  <input type="submit" class="w-btn w-btn-gray" name="btn1" id="btn1" value="부서번호 검색 "/>
-		  </td>
-		 </tr>
-		 	<tr>
-		 		<td>
-			<c:if test="${resultdept==1}">
-			<c:if test="${resultemp==0}">
-				삭제할수있는 부서입니다. <input class="w-btn w-btn-gray" type="button" id="btn2" value="부서삭제하기."/>
-			</c:if>  
-			</c:if>  
-			
-			<c:if test="${resultdept==0}">
-				삭제할 부서번호가 없습니다.
-			</c:if>  	
-			<c:if test="${resultemp==1}">
-				사용 중인 사원이 있는 부서번호입니다.
-			</c:if>  	
-		 		</td>
-		 	</tr>
-	</form>
+			<form name="deptDuplicationFrm" id="deptDuplicationFrm" method="get" action="<%=request.getContextPath()%>/mypageDeptDeleteDuplicate.aa">
+			 <tr>
+			  <th class="thead">부서번호</th>
+			  <td class="tbody">
+				  <input type="text" name="deptno" id="deptno" value="${Deptno}"  onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" placeholder="부서번호는는 2~4숫자">
+				  <input type="submit" class="w-btn w-btn-gray" name="btn1" id="btn1" value="부서번호 검색 "/>
+			  </td>
+			 </tr>
+			 	<tr>
+			 		<td>
+				<c:if test="${resultdept==1}">
+				<c:if test="${resultemp==0}">
+					삭제할수있는 부서입니다. <input class="w-btn w-btn-gray" type="button" id="btn2" value="부서삭제하기."/>
+				</c:if>  
+				</c:if>  
+				<c:if test="${resultdept==0}">
+					삭제할 부서번호가 없습니다.
+				</c:if>  	
+				<c:if test="${resultemp==1}">
+					사용 중인 사원이 있는 부서번호입니다.
+				</c:if>  	
+			 		</td>
+			 	</tr>
+			</form>
 		</table>
-			
 
  </td>
 </tr>
@@ -128,8 +117,5 @@ $(document).ready(function(){
   </td>
 </tr>
 </table>
- 
 </body>
 </html>
-
-

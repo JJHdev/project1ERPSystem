@@ -71,13 +71,9 @@
 		$("#search").val(val12);
 		});
   });
-  
-  
 </script>
 </head>
 <body>
- 
- 
  
 <table width="95%" border="1" cellpadding="0" cellspacing="0">
 <tr>
@@ -117,70 +113,64 @@
       </form>
       </c:if>
       
-      
-<table border="1">
-  <tr>
-    <th width="33%" class="thead">사번</th>
-    <td width="33%" class="tbody">${empdb.empno}</td>
-    <td width="34%" ></td>
-  </tr>
-  <tr>
-    <th width="33%" class="thead">이름</th>
-    <td width="33%" class="tbody">${empdb.ename}</td>
-    <td width="34%"></td>
-  </tr>
-  <tr>
-    <th width="33%" class="thead">비밀번호</th>
-    <td width="33%" class="tbody">${empdb.emppwd}</td>
-    <td width="34%"><input type="button" name="btn1" id="btn1" value="비밀번호 변경" class="w-btn w-btn-gray"/></td>
-  </tr>
-  <tr>
-    <th width="33%" class="thead">부서번호</th>
-    <td width="33%" class="tbody">${empdb.deptno},${deptdb.deptname}</td>
-    <c:if test="${not empty EMP_USER && EMP_USER.grade==999}">  
-    <td width="34%"><input type="button" name="btn2" id="btn2" value="부서번호 변경" class="w-btn w-btn-gray"/></td>
-    </c:if>
-  </tr>
-  
-  <tr>
-    <th width="33%" class="thead">직급</th>
-    <td width="33%" class="tbody">${empdb.level}</td>
-    <c:if test="${not empty EMP_USER && EMP_USER.grade==999}">  
-    <td width="34%"><input type="button" name="btn3" id="btn3" value="직급 변경" class="w-btn w-btn-gray"/></td>
-    </c:if>
-  </tr>
-  
-  <tr>
-    <th width="33%" class="thead">이메일</th>
-    <td width="33%" class="tbody">${empdb.email}</td>
-    <td width="34%"><input type="button" name="btn4" id="btn4" value="이메일 변경" class="w-btn w-btn-gray"/></td>
-  </tr>
-  <tr>
-    <th width="33%" class="thead">전화번호</th>
-    <td width="33%" class="tbody">${empdb.tel}</td>
-    <td width="34%"><input type="button" name="btn5" id="btn5" value="전화번호 변경" class="w-btn w-btn-gray"/></td>
-  </tr>
-  <tr>
-    <th width="33%" class="thead">연봉</th>
-    <td width="33%" class="tbody">${empdb.sal}</td>
-    <c:if test="${not empty EMP_USER && EMP_USER.grade==999}">  
-    <td width="34%"><input type="button" name="btn6" id="btn6" value="연봉 변경" class="w-btn w-btn-gray"/></td>
-    </c:if>
-  </tr>
-  <tr>
-    <th width="33%" class="thead">계정권한 변경</th>
-    <c:if test="${not empty EMP_USER && EMP_USER.grade==999}"> 
-    <td colspan="2" align="center"><input type="button" name="btn7" id="btn7" value="계정권한 변경" class="w-btn w-btn-gray"/></td>
-    </c:if>
-  </tr>
-</table>
-       
-       
-       
-       
+				<table border="1">
+				  <tr>
+				    <th width="33%" class="thead">사번</th>
+				    <td width="33%" class="tbody">${empdb.empno}</td>
+				    <td width="34%" ></td>
+				  </tr>
+				  <tr>
+				    <th width="33%" class="thead">이름</th>
+				    <td width="33%" class="tbody">${empdb.ename}</td>
+				    <td width="34%"></td>
+				  </tr>
+				  <tr>
+				    <th width="33%" class="thead">비밀번호</th>
+				    <td width="33%" class="tbody">${empdb.emppwd}</td>
+				    <td width="34%"><input type="button" name="btn1" id="btn1" value="비밀번호 변경" class="w-btn w-btn-gray"/></td>
+				  </tr>
+				  <tr>
+				    <th width="33%" class="thead">부서번호</th>
+				    <td width="33%" class="tbody">${empdb.deptno},${deptdb.deptname}</td>
+				    <c:if test="${not empty EMP_USER && EMP_USER.grade==999}">  
+				    <td width="34%"><input type="button" name="btn2" id="btn2" value="부서번호 변경" class="w-btn w-btn-gray"/></td>
+				    </c:if>
+				  </tr>
+				  
+				  <tr>
+				    <th width="33%" class="thead">직급</th>
+				    <td width="33%" class="tbody">${empdb.level}</td>
+				    <c:if test="${not empty EMP_USER && EMP_USER.grade==999}">  
+				    <td width="34%"><input type="button" name="btn3" id="btn3" value="직급 변경" class="w-btn w-btn-gray"/></td>
+				    </c:if>
+				  </tr>
+				  
+				  <tr>
+				    <th width="33%" class="thead">이메일</th>
+				    <td width="33%" class="tbody">${empdb.email}</td>
+				    <td width="34%"><input type="button" name="btn4" id="btn4" value="이메일 변경" class="w-btn w-btn-gray"/></td>
+				  </tr>
+				  <tr>
+				    <th width="33%" class="thead">전화번호</th>
+				    <td width="33%" class="tbody">${empdb.tel}</td>
+				    <td width="34%"><input type="button" name="btn5" id="btn5" value="전화번호 변경" class="w-btn w-btn-gray"/></td>
+				  </tr>
+				  <tr>
+				    <th width="33%" class="thead">연봉</th>
+				    <td width="33%" class="tbody">${empdb.sal}</td>
+				    <c:if test="${not empty EMP_USER && EMP_USER.grade==999}">  
+				    <td width="34%"><input type="button" name="btn6" id="btn6" value="연봉 변경" class="w-btn w-btn-gray"/></td>
+				    </c:if>
+				  </tr>
+				  <tr>
+				    <th width="33%" class="thead">계정권한 변경</th>
+				    <c:if test="${not empty EMP_USER && EMP_USER.grade==999}"> 
+				    <td colspan="2" align="center"><input type="button" name="btn7" id="btn7" value="계정권한 변경" class="w-btn w-btn-gray"/></td>
+				    </c:if>
+				  </tr>
+				</table>
        </td>
-</tr>
- 
+		</tr>
 <tr>
   <td colspan="16">
     <jsp:include page="../module/bottom.jsp" flush="false"/>

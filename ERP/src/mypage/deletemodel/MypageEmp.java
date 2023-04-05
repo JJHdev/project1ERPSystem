@@ -11,6 +11,7 @@ public class MypageEmp {
 	private String dName;
 	private String empRank;
 	private Date hiredate;
+	
 	public MypageEmp(Integer empNo, String eName, String dName, String empRank, Date hiredate) {
 		this.empNo = empNo;
 		this.eName = eName;
@@ -19,75 +20,57 @@ public class MypageEmp {
 		this.hiredate = hiredate;
 	}
 
-
 	@Override
 	public String toString() {
 		return "MypageEmp [delete=" + delete + ", empNo=" + empNo + ", eName=" + eName + ", dName=" + dName
 				+ ", empRank=" + empRank + ", hiredate=" + hiredate + "]";
 	}
 
-
 	public boolean isDelete() {
 		return delete;
 	}
-
 
 	public Integer getEmpNo() {
 		return empNo;
 	}
 
-
 	public String geteName() {
 		return eName;
 	}
-
 
 	public String getdName() {
 		return dName;
 	}
 
-
 	public String getEmpRank() {
 		return empRank;
 	}
-
 
 	public Date getHiredate() {
 		return hiredate;
 	}
 
-
 	public void setDelete(boolean delete) {
 		this.delete = delete;
 	}
-
 
 	public void setEmpNo(Integer empNo) {
 		this.empNo = empNo;
 	}
 
-
 	public void seteName(String eName) {
 		this.eName = eName;
 	}
-
 
 	public void setdName(String dName) {
 		this.dName = dName;
 	}
 
-
 	public void setEmpRank(String empRank) {
 		this.empRank = empRank;
 	}
 
-
 	public void setHiredate(Date hiredate) {
 		this.hiredate = hiredate;
 	} 
-	
-	
-
-	
-	
 }

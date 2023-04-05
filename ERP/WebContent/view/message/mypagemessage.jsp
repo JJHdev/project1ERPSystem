@@ -17,7 +17,6 @@
 <script>
   $(document).ready(function(){
 		$("#btn1").on("click",function(){
-			
 		//아이디필수입력
 		if($("#receiveEmpno").val()==""){ 
 			alert("받을 사번을 입력하세요.");
@@ -54,45 +53,40 @@
       <jsp:include page="../module/left.jsp" flush="false"/>
    </td>
    <td width="78%" valign="top">
-
    
    <table>
-	<form action="<%=request.getContextPath()%>/MessageController.aa" method="post">
-    <tr>
-			<th class="thead">보내는 사원</th>
-			<td class="tbody"><input type="text" id="sendEmpno" name="sendEmpno" value="${EMP_USER.empno}" readonly="readonly" ></td>    
-    </tr>
-    <tr>
-			<th class="thead">받는 사원</th>
-			<td class="tbody"><input type="text" id="receiveEmpno" name="receiveEmpno" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"  placeholder="보내는 사람 사원번호"></td>
-			<td class="tbody">
-			<c:if test="${cnt==0}">
-				   	<span class="errors">전송할수 없는 사번입니다.</span> 
-		  </c:if>
-			</td>  
-    </tr>
-    <tr>
-			<th class="thead">쪽지 제목</th>
-			<td class="tbody"><input type="text" id="title" name="title" placeholder="글제목"></td>    
-    </tr>
-    <tr>
-			<th class="thead">쪽지 내용</th>
-			<td class="tbody"><textarea id="message" name="message" rows="6"></textarea></td>    
-    </tr>
-    <tr>
-			<th class="thead">발송 버튼</th>
-			<td class="tbody"><input type="submit" class="w-btn w-btn-gray"  name="btn1" id="btn1"value="send Message" class="special"></td>    
-    </tr>
-    <tr>
-			<th class="thead">취소 버튼</th>
-			<td class="tbody"><input type="reset" class="w-btn w-btn-gray"  value="clear"></td>    
-    </tr>
+		<form action="<%=request.getContextPath()%>/MessageController.aa" method="post">
+	    <tr>
+				<th class="thead">보내는 사원</th>
+				<td class="tbody"><input type="text" id="sendEmpno" name="sendEmpno" value="${EMP_USER.empno}" readonly="readonly" ></td>    
+	    </tr>
+	    <tr>
+				<th class="thead">받는 사원</th>
+				<td class="tbody"><input type="text" id="receiveEmpno" name="receiveEmpno" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"  placeholder="보내는 사람 사원번호"></td>
+				<td class="tbody">
+				<c:if test="${cnt==0}">
+					   	<span class="errors">전송할수 없는 사번입니다.</span> 
+			  </c:if>
+				</td>  
+	    </tr>
+	    <tr>
+				<th class="thead">쪽지 제목</th>
+				<td class="tbody"><input type="text" id="title" name="title" placeholder="글제목"></td>    
+	    </tr>
+	    <tr>
+				<th class="thead">쪽지 내용</th>
+				<td class="tbody"><textarea id="message" name="message" rows="6"></textarea></td>    
+	    </tr>
+	    <tr>
+				<th class="thead">발송 버튼</th>
+				<td class="tbody"><input type="submit" class="w-btn w-btn-gray"  name="btn1" id="btn1"value="send Message" class="special"></td>    
+	    </tr>
+	    <tr>
+				<th class="thead">취소 버튼</th>
+				<td class="tbody"><input type="reset" class="w-btn w-btn-gray"  value="clear"></td>    
+	    </tr>
+		</form>
    </table>
-	</form>
-       
-       
-       
-       
        </td>
 </tr>   
 <tr>

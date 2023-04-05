@@ -27,7 +27,6 @@ public class UpdateService {
 			}
 			//일치하면 true리턴, 불일치하면 false
 			if(!mypageDbEmp.matchDno(curDno)) {
-				System.out.println("16번으로 지나갔니?");
 				throw new InvalidException(); //비번불일치예외 발생
 			}
 			//3.비번변경p621 28라인
@@ -81,7 +80,6 @@ public class UpdateService {
 		try {
 			conn = ConnectionProvider.getConnection();
 			conn.setAutoCommit(false);//autoCommit 설정x
-			
 			//로그인한 회원임을 확인
 			//1.user가 입력한 id와 기존  회원의 id와 일치
 			//user가 입력한 id를 사용하는 기존member정보가 담긴  Member객체받는다

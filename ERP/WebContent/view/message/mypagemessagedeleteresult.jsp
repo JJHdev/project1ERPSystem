@@ -18,24 +18,19 @@
 </head>
 <body>
  <h2>deleteArticle2.jsp</h2>
- ${cnt}
- 
  <c:if test="${cnt==1}">
  <script>
  	alert("메세지 삭제성공")
   </script>
   </c:if>
-  
    <c:if test="${cnt==0}">
   <script>
  	alert("메세지 삭제실패")
  	</script>
  	  </c:if>
- 	  
  	  <script>
  	  	location.href="<%=request.getContextPath()%>/MessageShowController.aa"; //지정url로 이동
  	  </script>
- 	  
  <hr/>
 </body>
 </html>

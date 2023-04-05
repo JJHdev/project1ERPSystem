@@ -38,31 +38,17 @@ public class MypageDeletePage {
 				totalPages++;        //전체페이수를 1씩증가
 			}
 			int modVal=currentPage%5;  //user가보고싶어요청페이지를 5로 나눈 나머지를 저장
-			// 요청페이지가 1-> modVal은 1
-			// 요청페이지가 2-> modVal은 2
-			// 요청페이지가 3-> modVal은 3
-			// 요청페이지가 4-> modVal은 4
-			// 요청페이지가 5-> modVal은 0
 			
 			startPage =currentPage/5*5 + 1;
-			// 요청페이지가 1-> startPage는 1
-			// 요청페이지가 2-> startPage는 1
-			// 요청페이지가 3-> startPage는 1
-			// 요청페이지가 4-> startPage는 1
-			// 요청페이지가 5-> startPage는 6
 			
 			//modVal==0은 요청페이지가 5의배수인 5 10 15....
 			if (modVal==0) startPage-=5;//startPage=startPage-5;
-			
-
 			
 			endPage = startPage + 4;
 			//endPage가 전체페이수보다크면  endPage값을 전체페이수로 적용해라                    
 			if(endPage>totalPages) endPage=totalPages;
 		}
 	}
-
-	//getter메서드
 	//전체게시물수 조회
 	public int getTotal() {
 		return total;

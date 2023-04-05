@@ -33,7 +33,6 @@
 </style>
 <script>
 $(document).ready(function(){
-	
 
 $("form#joinFrm").submit(function(){  
 	let frmObj = $(this);
@@ -150,9 +149,6 @@ const regexPhoneNumber = (target) => {
 </head>
 <body>
  
- 
- 
- 
 <table width="95%" border="1" cellpadding="0" cellspacing="0">
 <tr>
   <td colspan="16">
@@ -165,16 +161,9 @@ const regexPhoneNumber = (target) => {
    </td>
    <td width="78%" valign="top">
    
-   
-   
-   
-   
-   
 		<h3>사원등록</h3>
 		<table>
 		<form name="joinFrm"id="joinFrm" method="post" action="<%=request.getContextPath()%>/register.aa">
-				
-    
 				<tr>
 				 <th class="thead">사원번호</th>
 				 <td class="tbody">
@@ -264,12 +253,8 @@ const regexPhoneNumber = (target) => {
 				</div>
 				</td>
 				</tr>
-				
 	</form>
  </table> 
-       
-       
-       
 </tr>
 <tr>
   <td colspan="16">
@@ -277,7 +262,6 @@ const regexPhoneNumber = (target) => {
   </td>
 </tr>
 </table>
- 
 </body>
 </html>
 

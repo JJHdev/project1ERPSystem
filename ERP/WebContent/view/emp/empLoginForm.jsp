@@ -76,13 +76,9 @@
 		margin-top:30px
 		}
 	 .error {color:red; font-size:0.8em;}
-	
-	
 </style>
 </head>
 <body>
-
-
     <div class="container_body">
         <div class="container_title">로그인</div>
         	<form name="loginFrm"id="loginFrm" method="post" action="<%=request.getContextPath()%>/login.aa">
@@ -91,7 +87,6 @@
 		<c:if test="${errors.idOrPwNotMatch}">
 		 <span class="error">아이디와 암호가 일치하지 않습니다</span><br/><br/>
 		</c:if>
-            	
             	<div class="container_input">
             	사원번호<span class="detail"><input type="text" name="empno" placeholder=""></span>
             	<c:if test="${errors.empno}"><span class="error">사번을 입력하세요</span></c:if>
