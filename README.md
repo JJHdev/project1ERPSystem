@@ -84,10 +84,10 @@
 </br>
 
 <details>
-<summary><b>Controller에서 4가지의 요청방식 처리하기</b></summary>
+<summary><b>Controller에서 3가지의 요청방식 처리하기</b></summary>
 <div markdown="1">
   
-##### 4.2.3 Controller에서 4가지의 요청리처리
+##### 4.2.3 Controller에서 3가지의 요청리처리
 ![접근방식에 따라 처리하기 (처음, 사원조회, 삭제하기, 조회)](https://user-images.githubusercontent.com/116694081/230016198-042fbcfd-eabf-4296-a194-bc0e965c3549.png)
   
 </div>
